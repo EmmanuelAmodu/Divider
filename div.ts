@@ -35,7 +35,7 @@ class Divider {
         if (num - den == 1) return 1;
         if (this.povValue(num) < this.povValue(den))
             den = 0;
-        const wide_range = this.findRange(den < 0 ? den * -1 : den, num, num, 0);
+        const wide_range = this.findRange(this.povValue(den), num, num, 0);
         return this.reduceRange(den, num, wide_range);
     }
 
@@ -67,6 +67,7 @@ class Divider {
 }
 
 // Test case; Feel free to add as many here
+// TODO This should come from process.argv
 var test_case = [
     {
         input: [5, -6],

@@ -41,7 +41,7 @@ var Divider = /** @class */ (function () {
             return 1;
         if (this.povValue(num) < this.povValue(den))
             den = 0;
-        var wide_range = this.findRange(den < 0 ? den * -1 : den, num, num, 0);
+        var wide_range = this.findRange(this.povValue(den), num, num, 0);
         return this.reduceRange(den, num, wide_range);
     };
     Divider.prototype.getResult = function () {
