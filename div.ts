@@ -16,7 +16,6 @@ class Divider {
     // TODO use recursive function instead
     // Use binary search algorithm to implement
     private reduceRange(x: number, num: number, range: number[]){
-        console.log(range);
         while(true){
             var mid = Math.floor(range.reduce((a, b) => a+b) / 2);
             if (x * mid && x * mid > num) range[1] = mid;

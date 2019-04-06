@@ -19,7 +19,6 @@ var Divider = /** @class */ (function () {
     // TODO use recursive function instead
     // Use binary search algorithm to implement
     Divider.prototype.reduceRange = function (x, num, range) {
-        console.log(range);
         while (true) {
             var mid = Math.floor(range.reduce(function (a, b) { return a + b; }) / 2);
             if (x * mid && x * mid > num)
@@ -73,6 +72,7 @@ var Divider = /** @class */ (function () {
     return Divider;
 }());
 // Test case; Feel free to add as many here
+// TODO This should come from process.argv
 var test_case = [
     {
         input: [5, -6],
