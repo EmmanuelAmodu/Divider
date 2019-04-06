@@ -1,0 +1,27 @@
+{
+  "name": "divider",
+  "version": "1.0.0",
+  "description": "Simple class for division",
+  "main": "div.js",
+  "scripts": {
+    "test": "node test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/EmmanuelAmodu/Divider.git"
+  },
+  "keywords": [
+    "Dvider",
+    "Binary",
+    "search"
+  ],
+  "author": "Emmanuel Amodu",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/EmmanuelAmodu/Divider/issues"
+  },
+  "homepage": "https://github.com/EmmanuelAmodu/Divider#readme",
+  "devDependencies": {
+    "@types/node": "^11.13.0"
+  }
+}
